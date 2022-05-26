@@ -10,13 +10,13 @@ const routes: Routes = [
       { path: 'basket', loadChildren: ()=>loadRemoteModule({
         type: 'module', 
         remoteEntry: `${environment.mfe.mfeBasket}/remoteEntry.js`, 
-        exposedModule: 'module'
+        exposedModule: './Module'
       }).then(m=> m.BasketModule)
     }, 
       { path: 'profile', loadChildren: ()=>loadRemoteModule({
         type: 'module', 
         remoteEntry: `${environment.mfe.mfeProfile}/remoteEntry.js`, 
-        exposedModule: 'module'
+        exposedModule: './Module'
       }).then(m=> m.ProfileModule)
     },
   {path: 'login/callback', component: OktaCallbackComponent}
