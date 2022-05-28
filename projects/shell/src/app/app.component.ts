@@ -1,7 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { OktaAuthStateService, OKTA_AUTH } from '@okta/okta-angular';
 import { OktaAuth } from '@okta/okta-auth-js';
-import { filter, map, Observable, of, shareReplay } from 'rxjs';
+import { filter, map, Observable, shareReplay } from 'rxjs';
 
 @Component({
   selector: 'app-root',
